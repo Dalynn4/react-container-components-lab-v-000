@@ -10,7 +10,7 @@ class MovieReviews extends React.Component {
     </div>
     )
   }
-  
+
 }
 
 
