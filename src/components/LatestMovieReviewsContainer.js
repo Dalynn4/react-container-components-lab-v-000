@@ -24,7 +24,7 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 
       render() {
         <div className="latest-movie-reviews">
-        <MovieReviews />
+        <MovieReviews reviews={this.state.reviews}/>
         </div>
       }
 
