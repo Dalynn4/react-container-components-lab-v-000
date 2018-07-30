@@ -23,17 +23,10 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
       }
 
       render() {
-        return this.state.reviews.map(review => {
-          return(
-            <div className="latest-movie-reviews">
-            {review.name}
-            </div>
-          )
-        })
-
+        <div className="latest-movie-reviews">
+        <MovieReviews />
+        </div>
       }
-
-
 
 
   }
