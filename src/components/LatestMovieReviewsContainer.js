@@ -17,8 +17,7 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
       }
 
       componentDidMount() {
-        fetch('https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
-                    + `api-key=${NYT_API_KEY}`')
+        fetch(URL)
         .then(response => response.json())
         .then(reviews => this.setState({ reviews }))
       }
@@ -31,12 +30,12 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
             </div>
           )
         })
-        
+
       }
 
 
 
-    
+
   }
 
   export default LatestMovieReviewsContainer
